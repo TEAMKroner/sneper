@@ -3325,7 +3325,7 @@ local lang = redis:get(hash)
      if not lang then
      welcome = "*Welcome Dude*"
     elseif lang then
-     welcome = "👁‍🗨￤» اهلا بك يا "..(check_markdown(msg.from.first_name or "----"))..'\n👁‍🗨￤» نورتنا ضيف جهاتك في كروب {` '..msg.to.title..'`}\n\n•~~•🚸•~~•♦️•~~•🚸•~~•\n•♦• تابع @TEAMSTORM'
+     welcome = "👁‍🗨￤» اهلا بك يا "..(check_markdown(msg.from.first_name or "----"))..'\n👁‍🗨￤» نورتنا ضيف جهاتك في كروب {` '..msg.to.title..'`}\n\n•~~•🚸•~~•♦️•~~•🚸•~~•\n•♦•'
         end
      end
  if administration[tostring(arg.chat_id)]['rules'] then
