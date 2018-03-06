@@ -16,9 +16,9 @@ rank = "العضو 👲"
 end
 local function getpro(arg, data)
 if data.photos_[0] then
-tdcli.sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, data.photos_[0].sizes_[1].photo_.persistent_id_,"\n👁‍🗨￤» ايديك : "..msg.sender_user_id_.."\n👁‍🗨￤» معرفك : @"..(msg.from.username or "----").."\n👁‍🗨￤» رسائلك : "..tonumber(redis:get("msgs:"..msg.from.id..":"..msg.to.id) or 0).."\n👁‍🗨￤» موقعك : "..rank.."\n",msg.id_,msg.id_) 
+tdcli.sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, data.photos_[0].sizes_[1].photo_.persistent_id_,"\n👁‍🗨￤» خالتك : "..msg.sender_user_id_.."\n👁‍🗨￤» معرفك : @"..(msg.from.username or "----").."\n👁‍🗨￤»حمبي هاي رسايلك : "..tonumber(redis:get("msgs:"..msg.from.id..":"..msg.to.id) or 0).."\n👁‍🗨￤» رتبتك : "..rank.."\n",msg.id_,msg.id_) 
 else
-tdcli.sendMessage(msg.chat_id_, msg.id_, 1, "`لا توجد صورة للبروفايل !!`\n\n👁‍🗨￤» ايديك : "..msg.sender_user_id_.."\n👁‍🗨￤» معرفك : @"..(msg.from.username or "----").."\n👁‍🗨￤» رسائلك : "..tonumber(redis:get("msgs:"..msg.from.id..":"..msg.to.id) or 0).."\n👁‍🗨￤» موقعك : "..rank.."\n",msg.id_,msg.id_) 
+tdcli.sendMessage(msg.chat_id_, msg.id_, 1, "`حط صورة لحسابك وتعال !!`\n\n👁‍🗨￤» خالتك : "..msg.sender_user_id_.."\n👁‍🗨￤» معرفك : @"..(msg.from.username or "----").."\n👁‍🗨￤» رسائلك : "..tonumber(redis:get("msgs:"..msg.from.id..":"..msg.to.id) or 0).."\n👁‍🗨￤» موقعك : "..rank.."\n",msg.id_,msg.id_) 
 end
 end
 tdcli_function ({
