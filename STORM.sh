@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd $HOME/DEVSTORM
-token_="385190877:AAFkO796geK3YzM1KqjhtH7tALUPjgeQhMA" 
+token_="حط التوكن الخاص بك" 
 install() {
 	    cd tg
 		sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
@@ -25,11 +25,7 @@ install() {
 
 function print_logo() {
 	echo -e "
- __   ___________   ___     _____     __  __
-/  |  |___   ___|  / _ \   | ___ }   |  \/  |
-\_ \      | |     | | | |  | |_) }   | |\/| |
- _) |     | |     | |_| |  |  _< \   | |  | |
-|__/      |_|      \___/   |_|  \_\  |_|  |_|
+
  BY @TAHAJ20 DEV : TAHAJ20            "
 	echo -e " "
 	echo -e " "
@@ -78,11 +74,7 @@ echo -e ""
    print_logo
    echo -e "\033[38;5;208m"
    echo -e "
- __   ___________   ___     _____     __  __
-/  |  |___   ___|  / _ \   | ___ }   |  \/  |
-\_ \      | |     | | | |  | |_) }   | |\/| |
- _) |     | |     | |_| |  |  _< \   | |  | |
-|__/      |_|      \___/   |_|  \_\  |_|  |_|
+
  BY @TAHAJ20 DEV : TAHAJ20            
 "
    echo -e "    "
