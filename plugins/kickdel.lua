@@ -12,7 +12,7 @@ local function getChatId(chat_id)
 end
 
 local function tahaj20(msg, matches) 
-if matches[1] == 'clean deleted' or 'اطرد المحذوف' and is_mod(msg) and msg.to.type == "channel" then 
+if matches[1] == 'clean deleted' or 'ادفر المحذوف' and is_mod(msg) and msg.to.type == "channel" then 
   function check_deleted(TM, BD) 
     for k, v in pairs(BD.members_) do 
 local function clean_cb(TM, BD)
@@ -22,7 +22,7 @@ end
 end
 tdcli.getUser(v.user_id_, clean_cb, nil)
  end 
-    tdcli.sendMessage(msg.to.id, msg.id, 1, "👁‍🗨￤» مرحــبا عزيــزي المستخــدم \n👁‍🗨￤» تــــــم طرد الحـــسابـات المحذوفه", 1, 'md') 
+    tdcli.sendMessage(msg.to.id, msg.id, 1, "👁‍🗨￤» مرحــبا عزيــزي المستخــدم \n👁‍🗨￤» تم دفر الحسابات المحذوفة", 1, 'md') 
   end 
   tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.to.id).ID,offset_ = 0,limit_ = 1000000}, check_deleted, nil)
   end 
@@ -31,7 +31,7 @@ end
 return {  
 patterns ={  
 '^(clean deleted)$',
-	"^(اطرد المحذوف)$",
+	"^(ادفر المحذوف)$",
 	},
   run = tahaj20 
 }
