@@ -16,30 +16,30 @@
 
 ⛦• • خلي اول كود واضغط انتر • • ⛦
 
-📮┋git clone https://github.com/zuaus/DEVSTORM.git
+📮┋git clone https://github.com/TEAMKroner/sneper
 ⛦• • حط ثاني كود وانتر 🔻 • • ⛦
 
-📮┋cd DEVSTORM 
+📮┋cd sneper 
 
 ⛦• • حط ثالث كود وانتر 🔻• • ⛦
 
-📮┋chmod +x STORM.sh 
+📮┋chmod +x sneper.sh 
 
 ⛦• • حط رابع كود وانتر 🔻• • ⛦
 
-📮┋./STORM.sh install 
+📮┋./sneper.sh install 
 
 ⛦• • حط اخر كود وانتر 🔻• • ⛦
 
-📮┋./STORM.sh
+📮┋./sneper.sh
 
 ⛦• • • • • • • • • • • • • • • • ⛦
-📌 وراها روح لملف STORM.sh افتحه وحط التوكن الخاص بيك 
+📌 وراها روح لملف sneper.sh افتحه وحط التوكن الخاص بيك 
 📌 وبعدها روح افتح فولدر اسمه `{ data }`
  وافتح ملف `{ config.lua }` ثم اذهب الى سطر 33 تلكه الايدي مالتي حط ايديك واحفض الملف
 ⛦• • • • • • • • • • • • • • • •⛦
 💠┋لتشغيله ع `{vps}` 🔻
-killall screen && cd $home && ls -la && rm -fr .telegram-cli && cd DEVSTORM && screen ./STORM.sh
+killall screen && cd $home && ls -la && rm -fr .telegram-cli && cd sneper && screen ./sneper.sh
 
 💠┋ملاحظه عند وجود خطأ عند عمل رن 
 قم 
